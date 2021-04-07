@@ -33,6 +33,7 @@ main:hover {
   color: rgb(22, 20, 20);
   display: grid;
   grid-template-rows: auto 1fr 200px;
+  transition: 0.5s;
 }
 header {
   display: grid;
@@ -111,6 +112,7 @@ button:hover {
   color: black;
   background: linear-gradient(45deg, #9198e5, #eeaeca);
   transform: rotate(3deg) scale(1.1);
+  transition: 0.5s;
 }
 
 .icons {
