@@ -61,6 +61,7 @@ header:hover .auti {
 .opt {
   justify-self: right;
 }
+
 .info {
   display: grid;
   padding: 20px;
@@ -90,6 +91,9 @@ header:hover .auti {
 .text {
   text-align: center;
   line-height: 1.7rem;
+}
+.text h3 {
+  color: rgb(167, 164, 164);
 }
 button {
   padding: 10px;
