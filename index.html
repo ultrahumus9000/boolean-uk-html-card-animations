@@ -5,38 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Static Template</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital@1&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main>
       <header>
-        <img src="images/svgs/arrow.svg" alt="codebox" width="50" />
-        <img src="images/svgs/light.svg" alt="codebox" width="50" />
+        <img
+          class="arrow"
+          src="images/svgs/arrow.svg"
+          alt="codebox"
+          width="40"
+        />
+        <img
+          class="light"
+          src="images/svgs/light.svg"
+          alt="codebox"
+          width="40"
+        />
+        <img class="opt" src="images/svgs/opt.svg" alt="codebox" width="40" />
       </header>
       <div class="info">
-        <img src="images/lin.jpeg" alt="lin" width="100" />
-        <h1>Linlin Li</h1>
-        <h3>software engineer</h3>
-        <h2>Build good apps for you</h2>
+        <div class="profile">
+          <img src="images/lin.jpeg" alt="lin" width="100" />
+        </div>
+
+        <section class="text">
+          <h1>Linlin Li</h1>
+          <h3>Software Engineer</h3>
+          <h2>Build good apps for you</h2>
+        </section>
+
         <button>Hire Me</button>
       </div>
+
       <div class="icons">
         <div class="icon-card">
           <img src="images/svgs/codebox.svg" alt="codebox" width="50" />
           <h2>12.4k</h2>
           <p>Followers</p>
         </div>
+
         <div class="icon-card">
           <img src="images/svgs/wechat.svg" alt="codebox" width="50" />
           <h2>12.4k</h2>
           <p>Followers</p>
         </div>
+
         <div class="icon-card">
           <img src="images/svgs/github.svg" alt="codebox" width="50" />
           <h2>12.4k</h2>
           <p>Followers</p>
         </div>
-     
+      </div>
     </main>
   </body>
 </html>
