@@ -3,20 +3,34 @@
   padding: 0px;
   box-sizing: border-box;
 }
+
 body {
   display: grid;
   grid-template:
     ". main ." 1fr/
     180px 1fr 180px;
   font-family: "Barlow";
+  place-items: center;
 }
 main {
   grid-area: main;
   border: 10px solid wheat;
   border-radius: 20px;
   margin-top: 50px;
-  background-color: rgb(60, 65, 82);
+  background-color: rgb(92, 93, 97);
   color: whitesmoke;
+  display: grid;
+  grid-template-rows: auto 1fr 200px;
+  width: auto;
+  height: auto;
+}
+main:hover {
+  grid-area: main;
+  border: 10px solid rgb(19, 12, 1);
+  border-radius: 20px;
+  margin-top: 50px;
+  background-color: rgb(216, 217, 223);
+  color: rgb(22, 20, 20);
   display: grid;
   grid-template-rows: auto 1fr 200px;
 }
@@ -25,10 +39,24 @@ header {
   grid-template-columns: 60px auto auto;
   padding: 10px;
 }
-.arrow {
+.arrow:hover,
+.light:hover,
+.opt:hover {
+  border: 2px solid rgb(245, 217, 217);
+  border-radius: 50%;
+  background-color: rgb(219, 153, 153);
+  transition: 0.4s;
+}
+
+header:hover .auti {
+  display: none;
 }
 .light {
   justify-self: right;
+}
+.arrow:active,
+.light:active {
+  transform: scale(1.5) translate(1px, 1px);
 }
 .opt {
   justify-self: right;
@@ -45,9 +73,20 @@ header {
   border-radius: 50%;
   object-fit: cover;
   height: 100px;
-  /* object-position: 0.5px 0.5px; */
+  object-position: 5px 0.5px;
   border: 4px rgb(134, 223, 223) solid;
+  animation: pro 1s linear;
+  transition: 1s;
 }
+@keyframes pro {
+  50% {
+    transform: rotate(20deg) scale(1.5);
+  }
+}
+.profile img:hover {
+  transform: rotate(10deg) scale(1.5);
+}
+
 .text {
   text-align: center;
   line-height: 1.7rem;
@@ -58,11 +97,41 @@ button {
   border-radius: 20px;
   width: 200px;
   margin: 15px;
+  background: linear-gradient(30deg, #db156b, #94e99c);
+  color: white;
+  border: 3px solid#9198e5;
+  transition: 0.3s;
 }
+button:hover {
+  color: black;
+  background: linear-gradient(45deg, #9198e5, #eeaeca);
+  transform: rotate(3deg) scale(1.1);
+}
+
 .icons {
-  display: flex;
-  flex-basis: 200px;
-  gap: 30px;
+  padding-bottom: 30px;
+  display: grid;
   place-content: center;
-  margin-top: 40px;
+}
+hr {
+  margin: 0px 30px 0 30px;
+}
+.icons:hover hr {
+  display: none;
+}
+.card-box {
+  display: flex;
+  gap: 30px;
+  padding: 20px;
+  justify-content: center;
+}
+.hidden {
+  text-align: center;
+  margin: 0px 40px 20px 40px;
+  display: none;
+  background-color: #9198e5;
+  border-radius: 20px;
+}
+.icons:hover .hidden {
+  display: block;
 }
