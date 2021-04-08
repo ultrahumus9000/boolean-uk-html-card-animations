@@ -125,7 +125,7 @@ button:hover {
 
 .icon-card img:hover {
   transform: scale(1.3);
-  background: #378682;
+  background: linear-gradient(#378682, rgb(99, 55, 62));
   border: 3px solid #378682;
   border-radius: 50%;
   transition: 0.4s;
